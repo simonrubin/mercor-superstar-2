@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.thinking {
+  @apply block w-[16px] h-[16px] bg-on-container rounded-full;
+  animation: pulse 1.5s infinite;
+}
+
+.maplibregl-map .maplibregl-popup {
+  max-width: fit-content !important;
+}
+
+.maplibregl-popup .maplibregl-popup-content {
+  padding: 0;
+}
+
+.map-marker {
+  cursor: pointer;
+}
+
+.business-website-fab {
+  background-color: white !important;
+  border: 1px solid rgb(26, 115, 232) !important;
+  color: rgb(26, 115, 232) !important;
+  box-shadow: none !important;
+}
+
+.popup-img {
+  min-height: 144px;
+}

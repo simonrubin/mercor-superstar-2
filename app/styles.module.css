@@ -1,0 +1,48 @@
+/* styles.module.css */
+
+/* split in half horizontally */
+.homeContainer {
+  @apply flex flex-col h-screen w-screen;
+}
+
+/* left side */
+.mapContainer {
+  @apply flex-1;
+}
+
+/* right side */
+.chatContainer {
+  @apply flex-1;
+}
+
+/* mobile */
+@media (max-width: 320px) {
+  .homeContainer {
+    @apply flex-col h-screen;
+  }
+
+  /* top half page */
+  .mapContainer {
+    @apply flex-1 w-screen h-1/2;
+  }
+
+  /* bottom half page */
+  .chatContainer {
+    @apply flex-1 w-screen h-1/2;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .homeContainer {
+    @apply flex-col h-screen w-screen;
+  }
+
+  .mapContainer {
+    @apply flex-1;
+  }
+
+  .chatContainer {
+    @apply flex-1;
+  }
+}
